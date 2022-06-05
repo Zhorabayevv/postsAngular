@@ -1,0 +1,6 @@
+<app-my-button (click)="toggleBtns()">Add new post</app-my-button>
+<app-add-post *ngIf="toggle" (onAddPost)="addPost($event)"></app-add-post>
+<h1 class="header">{{headerPost}}</h1>
+<app-container *ngFor="let task of tasks" [task]="task" 
+(onDeletePost)="deletePost(task)">
+</app-container>

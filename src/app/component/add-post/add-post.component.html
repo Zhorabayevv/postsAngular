@@ -1,0 +1,10 @@
+<form class="myForm" (ngSubmit)="onSubmit()">
+	<div class="form-control">
+		<input class="myInput" type="text" name="title" id="title" placeholder="Add title" [(ngModel)]="title">
+	</div>
+	<div class="form-control">
+		<input class="myInput" type="text" name="description" id="description" placeholder="Add description"
+			[(ngModel)]="description">
+	</div>
+	<app-my-button>Save Post</app-my-button>
+</form>

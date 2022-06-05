@@ -1,0 +1,31 @@
+<div class="post">
+	<a
+	[routerLink]="['/about', task.id]"
+	
+	>
+		<div class="content">
+			<strong>
+				{{ task.title }}
+			</strong>
+			<div>
+				{{task.description}}
+			</div>
+		</div>
+	</a>
+	<div>
+		<app-my-button (click)="onDelete(task)">Delete</app-my-button>
+	</div>
+</div>
+<!-- 
+<button (click)="description='Angular top 1'">Angular top 1</button>
+<h2>{{count}}</h2>
+<br>
+
+<button (click)="increment()">increment</button>
+<button (click)="decrement()">decrement</button>
+<input class="myInput" #myInput type="text" (input)="inputHandler($event)" [value]="title" />
+
+
+<div>
+	<input type="text" [(ngModel)]="title">
+</div> -->
